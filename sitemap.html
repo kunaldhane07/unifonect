@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Sitemap - Unifonect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .sitemap-page {
+            padding: 120px 0 80px;
+        }
+        .sitemap-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+        .sitemap-col h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary);
+            display: inline-block;
+        }
+        .sitemap-col ul {
+            list-style: none;
+        }
+        .sitemap-col ul li {
+            margin-bottom: 12px;
+        }
+        .sitemap-col ul li a {
+            color: var(--gray-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 14px;
+        }
+        .sitemap-col ul li a:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+        @media (max-width: 968px) {
+            .sitemap-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+        }
+        @media (max-width: 768px) {
+            .sitemap-page { padding: 100px 0 60px; }
+            .sitemap-grid { grid-template-columns: 1fr; gap: 25px; text-align: center; }
+            .sitemap-col h3 { display: block; text-align: center; }
+            .sitemap-col ul li a { display: inline-block; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">U</div>
+            <div class="loader-text">Unifonect</div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <div class="logo-icon">U</div>
+                    <span class="logo-text">unifonect</span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="industries.html">Industries</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="sitemap-page">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Navigation</div>
+                <h1 class="hero-title" style="font-size: 56px; margin-bottom: 20px;">Site <span class="gradient-text">Map</span></h1>
+                <p class="hero-subtitle">Quick links to all pages on our website</p>
+            </div>
+            
+            <div class="sitemap-grid">
+                <div class="sitemap-col">
+                    <h3>Main Pages</h3>
+                    <ul>
+                        <li><a href="index.html">🏠 Home</a></li>
+                        <li><a href="about.html">📖 About Us</a></li>
+                        <li><a href="services.html">⚙️ Services</a></li>
+                        <li><a href="industries.html">🏭 Industries</a></li>
+                        <li><a href="products.html">📦 Products</a></li>
+                        <li><a href="contact.html">📞 Contact</a></li>
+                    </ul>
+                </div>
+                <div class="sitemap-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="leadership.html">👥 Leadership</a></li>
+                        <li><a href="careers.html">💼 Careers</a></li>
+                        <li><a href="newsroom.html">📰 Newsroom</a></li>
+                        <li><a href="investors.html">📊 Investors</a></li>
+                        <li><a href="csr.html">🌱 CSR</a></li>
+                        <li><a href="awards.html">🏆 Awards</a></li>
+                    </ul>
+                </div>
+                <div class="sitemap-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="insights.html">📝 Blog</a></li>
+                        <li><a href="privacy.html">🔒 Privacy Policy</a></li>
+                        <li><a href="terms.html">📜 Terms of Service</a></li>
+                        <li><a href="sitemap.html">🗺️ Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="sitemap-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">GDPR Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo"><div class="logo-icon">U</div><span>unifonect</span></div>
+                    <p>Enterprise IT solutions for the modern digital enterprise.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="leadership.html">Leadership</a></li><li><a href="careers.html">Careers</a></li><li><a href="newsroom.html">Newsroom</a></li></ul></div>
+                <div class="footer-col"><h4>Solutions</h4><ul><li><a href="services.html">Cloud Services</a></li><li><a href="services.html">Cybersecurity</a></li><li><a href="services.html">Data Analytics</a></li><li><a href="services.html">Software Development</a></li></ul></div>
+                <div class="footer-col"><h4>Resources</h4><ul><li><a href="insights.html">Blog</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="sitemap.html">Sitemap</a></li></ul></div>
+                <div class="footer-col"><h4>Contact</h4><ul><li><a href="contact.html">Contact Us</a></li><li><a href="contact.html">Support</a></li><li><a href="investors.html">Investor Relations</a></li><li><a href="csr.html">CSR</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Unifonect. All rights reserved.</p><div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="sitemap.html">Sitemap</a></div></div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

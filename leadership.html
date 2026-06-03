@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Leadership - Unifonect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .leadership-page {
+            padding: 120px 0 80px;
+        }
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .leader-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .leader-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--secondary);
+        }
+        .leader-image {
+            width: 150px;
+            height: 150px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 60px;
+            color: white;
+        }
+        .leader-card h3 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .leader-title {
+            color: var(--secondary);
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .leader-card p {
+            color: var(--gray-light);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .leader-social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .leader-social a {
+            width: 36px;
+            height: 36px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .leader-social a:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+        }
+        @media (max-width: 968px) {
+            .leadership-grid { grid-template-columns: repeat(2, 1fr); gap: 25px; }
+        }
+        @media (max-width: 768px) {
+            .leadership-page { padding: 100px 0 60px; }
+            .leadership-grid { grid-template-columns: 1fr; gap: 20px; }
+            .leader-card { padding: 30px 20px; }
+            .leader-image { width: 120px; height: 120px; font-size: 48px; }
+            .leader-card h3 { font-size: 22px; }
+        }
+        @media (max-width: 480px) {
+            .leader-image { width: 100px; height: 100px; font-size: 40px; }
+            .leader-card h3 { font-size: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">U</div>
+            <div class="loader-text">Unifonect</div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <div class="logo-icon">U</div>
+                    <span class="logo-text">unifonect</span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="industries.html">Industries</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="insights.html">Insights</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="leadership-page">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Our Leaders</div>
+                <h1 class="hero-title" style="font-size: 56px; margin-bottom: 20px;">Meet Our <span class="gradient-text">Leadership</span></h1>
+                <p class="hero-subtitle">Visionary leaders driving innovation and excellence in IT</p>
+            </div>
+            
+            <div class="leadership-grid">
+                <div class="leader-card">
+                    <div class="leader-image"><i class="fas fa-user-tie"></i></div>
+                    <h3>John Anderson</h3>
+                    <div class="leader-title">CEO & Founder</div>
+                    <p>20+ years in IT leadership, formerly CTO at Fortune 500 tech firm</p>
+                    <div class="leader-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-image"><i class="fas fa-user-tie"></i></div>
+                    <h3>Sarah Mitchell</h3>
+                    <div class="leader-title">Chief Technology Officer</div>
+                    <p>Cloud architecture expert, AWS Certified Solutions Architect</p>
+                    <div class="leader-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="leader-card">
+                    <div class="leader-image"><i class="fas fa-user-tie"></i></div>
+                    <h3>David Chen</h3>
+                    <div class="leader-title">Chief Operating Officer</div>
+                    <p>Operations expert with global enterprise experience</p>
+                    <div class="leader-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo"><div class="logo-icon">U</div><span>unifonect</span></div>
+                    <p>Enterprise IT solutions for the modern digital enterprise.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="leadership.html">Leadership</a></li><li><a href="careers.html">Careers</a></li><li><a href="newsroom.html">Newsroom</a></li></ul></div>
+                <div class="footer-col"><h4>Solutions</h4><ul><li><a href="services.html">Cloud Services</a></li><li><a href="services.html">Cybersecurity</a></li><li><a href="services.html">Data Analytics</a></li><li><a href="services.html">Software Development</a></li></ul></div>
+                <div class="footer-col"><h4>Resources</h4><ul><li><a href="insights.html">Blog</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="sitemap.html">Sitemap</a></li></ul></div>
+                <div class="footer-col"><h4>Contact</h4><ul><li><a href="contact.html">Contact Us</a></li><li><a href="contact.html">Support</a></li><li><a href="investors.html">Investor Relations</a></li><li><a href="csr.html">CSR</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Unifonect. All rights reserved.</p><div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="sitemap.html">Sitemap</a></div></div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
